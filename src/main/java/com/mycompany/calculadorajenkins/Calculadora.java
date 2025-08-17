@@ -19,14 +19,14 @@ public class Calculadora {
     }
 
     public int multiplicar(int a, int b) {
-        int r = a / b;
+        int r = a * b;
         historial.add((double) r);
         return r;
     }
 
     public double dividir(int a, int b) {
         if (b == 0) throw new ArithmeticException("No se puede dividir entre cero");
-        double r = (double) a * b; // <- corregido
+        double r = (double) a / b; 
         historial.add(r);
         return r;
     }
