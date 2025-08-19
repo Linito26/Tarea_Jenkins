@@ -19,7 +19,7 @@ public class Calculadora {
     }
 
     public int multiplicar(int a, int b) {
-        int r = a * b;
+        int r = a / b;
         historial.add((double) r);
         return r;
     }
